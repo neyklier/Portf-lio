@@ -23,6 +23,12 @@ body {
     padding: 50px 0;
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
 /* Navegação */
 header {
     background-color: white;
@@ -42,6 +48,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+    gap: 20px;
 }
 
 nav ul li {
@@ -56,6 +63,18 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }
 
 /* Seção Hero */
@@ -122,6 +141,12 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 }
 
 .project-card {
@@ -468,7 +493,7 @@ footer {
     top: 20px; /* Posiciona a notificação 20px abaixo do topo */
     left: 30%; /* Mantém uma pequena margem à direita */
     background-color: #eed752; /* Verde */
-    color:                                  rgb(20, 7, 7);
+    color: rgb(20, 7, 7);
     padding: 20px 30px; /* Padding maior */
     border-radius: 10px; /* Bordas mais arredondadas */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
@@ -493,19 +518,19 @@ footer {
     background-color: var(--background-color);
     padding: 60px 0;
     text-align: center;
-  }
-  
-  /* Título principal da seção */
-  #experiencia-atendimento h2 {
+}
+
+/* Título principal da seção */
+#experiencia-atendimento h2 {
     font-size: 2.5rem; /* Tamanho maior para impacto */
     margin-bottom: 30px;
     color: var(--primary-color);
     font-weight: bold;
     position: relative; /* Para adicionar um efeito especial */
-  }
-  
-  /* Adiciona um sublinhado estilizado ao título principal */
-  #experiencia-atendimento h2::after {
+}
+
+/* Adiciona um sublinhado estilizado ao título principal */
+#experiencia-atendimento h2::after {
     content: '';
     display: block;
     width: 80px;
@@ -513,35 +538,35 @@ footer {
     background-color: var(--secondary-color);
     margin: 10px auto 0;
     border-radius: 2px;
-  }
-  
-  /* Subtítulos (Atendimento ao Cliente, Telemarketing, Customer Success) */
-  .experiencia-item h3 {
+}
+
+/* Subtítulos (Atendimento ao Cliente, Telemarketing, Customer Success) */
+.experiencia-item h3 {
     font-size: 1.8rem; /* Tamanho maior para destacar */
     margin-bottom: 15px;
     color: var(--primary-color);
     font-weight: bold;
     position: relative; /* Para adicionar ícones ou efeitos especiais */
-  }
-  
-  /* Ícones ao lado dos subtítulos */
-  .experiencia-item h3 i {
+}
+
+/* Ícones ao lado dos subtítulos */
+.experiencia-item h3 i {
     font-size: 1.5rem;
     color: var(--secondary-color);
     margin-right: 10px;
     vertical-align: middle;
-  }
-  
-  /* Parágrafos dentro dos itens de experiência */
-  .experiencia-item p {
+}
+
+/* Parágrafos dentro dos itens de experiência */
+.experiencia-item p {
     font-size: 1rem;
     color: #666;
     line-height: 1.6;
     text-align: left; /* Alinhamento à esquerda para melhor leitura */
-  }
-  
-  /* Efeito hover nos cartões de experiência */
-  .experiencia-item {
+}
+
+/* Efeito hover nos cartões de experiência */
+.experiencia-item {
     background: white;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -549,18 +574,24 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-  
-  .experiencia-item:hover {
+}
+
+.experiencia-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada no hover */
-  }
-  
-  /* Grid para organizar as subseções */
-  .experiencia-grid {
+}
+
+/* Grid para organizar as subseções */
+.experiencia-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     justify-content: center;
     margin-top: 20px;
-  }
+}
+
+@media (max-width: 768px) {
+    .experiencia-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
